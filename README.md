@@ -30,3 +30,7 @@ You can get the constituent hierarchy by scripts/conhier_s.py for s-type constit
     ./s-hierarchy-trainer train.s test.s
 
 It will automatically generate the output file test.sOUT, which then can be used as extra features on the lookahead implementation of [ZPar](https://github.com/SUTDNLP/ZPar)
+
+### Cite
+
+Jiangming Liu and Yue Zhang, Shift-Reduce Constituent Parsing With Neural Lookahead Feature. TACL 2016
