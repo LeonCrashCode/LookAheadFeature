@@ -2,14 +2,12 @@ This implementation is based on the [cnn library](https://github.com/clab/cnn-v1
 
 #### Building
 
-First you need to download the cnn library and related libraries, and make them compiled, and then download the directory into the cnn 
 
     mkdir build
     cd build
     cmake .. -DEIGEN3_INCLUDE_DIR=/path/to/eigen
     make    
 
-Follow the cnn `README` to compile them
 
 #### Preprocessing
 
