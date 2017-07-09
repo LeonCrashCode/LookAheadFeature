@@ -1,4 +1,4 @@
-This implementation is based on the [cnn library](https://github.com/clab/cnn-v1) for this software to function.
+This implementation is based on the [cnn library](https://github.com/clab/cnn-v1) for this software to function. The paper is "Shift-Reduce Constituent Parsing with Neural Lookahead Features". 
 
 #### Building
 
