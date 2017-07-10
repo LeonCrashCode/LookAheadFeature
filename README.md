@@ -13,8 +13,16 @@ This implementation is based on the [cnn library](https://github.com/clab/cnn-v1
 
 You can get the constituent hierarchy by scripts/conhier_s.py for s-type constituent hierarchy and scripts/conhier_e.py for e-type constituent hierachy
 
-    scripts/conhier_s.py train.con > train.s
-    scripts/conhier_e.py train.con > train.e
+    ./scripts/conhier_s.py [training data in bracketed format] > [s-type training data]
+    ./scripts/conhier_e.py [training data in bracketed format] > [e-type training data]
+
+    ./scripts/conhier_s.py [development data in bracketed format] > [s-type development data]
+    ./scripts/conhier_e.py [development data in bracketed format] > [e-type development data]
+
+    ./scripts/conhier_s.py [test data in bracketed format] > [s-type test data]
+    ./scripts/conhier_e.py [test data in bracketed format] > [e-type test data]
+
+The directory data contains the related data.
 
 ### Training
 
@@ -27,6 +35,14 @@ You can get the constituent hierarchy by scripts/conhier_s.py for s-type constit
     ./build/impl/e-hierarchy-decoder train.e test.e [s_model]
 
 It will automatically generate the output file test.sOUT and test.eOUT, respectively, which then can be used as extra features on the lookahead implementation of [ZPar](https://github.com/SUTDNLP/ZPar)
+
+### Usage of ZPar
+    
+    ./scripts/combine.py [.sOUT] [eOUT] > [extra feature]
+ 
+You can follow the ZPar instruction to complie constituent parser with implementation of "jiangming".
+    
+    ./conparser [in] [out] zpar_model [extra feature]
 
 ### Citation
 
