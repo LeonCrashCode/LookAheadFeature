@@ -18,13 +18,15 @@ You can get the constituent hierarchy by scripts/conhier_s.py for s-type constit
 
 ### Training
 
-    ./s-hierarchy-trainer train.s dev.s 
+    ./build/impl/s-hierarchy-trainer train.s dev.s 
+    ./build/impl/e-hierarchy-trainer train.e dev.e
 
 ### Decoding
 
-    ./s-hierarchy-trainer train.s test.s
+    ./build/impl/s-hierarchy-trainer train.s test.s [s_model]
+    ./build/impl/e-hierarchy-decoder train.e test.e [s_model]
 
-It will automatically generate the output file test.sOUT, which then can be used as extra features on the lookahead implementation of [ZPar](https://github.com/SUTDNLP/ZPar)
+It will automatically generate the output file test.sOUT and test.eOUT, respectively, which then can be used as extra features on the lookahead implementation of [ZPar](https://github.com/SUTDNLP/ZPar)
 
 ### Citation
 
