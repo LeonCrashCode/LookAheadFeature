@@ -38,7 +38,7 @@ It will automatically generate the output file test.sOUT and test.eOUT, respecti
 
 ### Usage of ZPar
     
-    ./scripts/combine.py [.sOUT] [eOUT] > [extra feature]
+    ./scripts/combine.py [.sOUT] [.eOUT] > [extra feature]
  
 You can follow the ZPar instruction to complie constituent parser with implementation of "jiangming".
     
@@ -52,7 +52,6 @@ You can follow the ZPar instruction to complie constituent parser with implement
 	    journal = {Transactions of the Association for Computational Linguistics},
 	    volume = {5},
 	    year = {2017},
-	    keywords = {},
         issn = {2307-387X},
         url = {https://transacl.org/ojs/index.php/tacl/article/view/927},
         pages = {45--58}
