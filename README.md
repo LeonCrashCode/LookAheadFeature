@@ -32,7 +32,7 @@ The directory data contains the related data.
 ### Decoding
 
     ./build/impl/s-hierarchy-trainer train.s test.s [s_model]
-    ./build/impl/e-hierarchy-decoder train.e test.e [s_model]
+    ./build/impl/e-hierarchy-decoder train.e test.e [e_model]
 
 It will automatically generate the output file test.sOUT and test.eOUT, respectively, which then can be used as extra features on the lookahead implementation of [ZPar](https://github.com/SUTDNLP/ZPar)
 
