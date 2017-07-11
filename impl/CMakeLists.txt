@@ -4,7 +4,13 @@ foreach(TARGET
 	s-hierarchy-trainer
 	s-hierarchy-decoder
 	e-hierarchy-trainer
-	e-hierarchy-decoder)
+	e-hierarchy-decoder
+
+	s-hierarchy-trainer-CH
+        s-hierarchy-decoder-CH
+        e-hierarchy-trainer-CH
+        e-hierarchy-decoder-CH
+	)
 ADD_EXECUTABLE(${TARGET} ${TARGET}.cc)
   target_link_libraries(${TARGET} cnn ${LIBS} pthread)
   if(UNIX AND NOT APPLE)
